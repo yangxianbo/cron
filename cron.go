@@ -133,7 +133,7 @@ func (c *Cron) AddJob(spec string, cmd Job, args *Extra) (string, error) {
 	}
 	entryid := c.Schedule(schedule, cmd, args)
 	if entryid == "" {
-		err = errors.New("IDChan is not enough")
+		err = errors.New("IDChan is full,can not add job")
 		return "", err
 	}
 	return entryid, nil

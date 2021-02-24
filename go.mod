@@ -1,4 +1,4 @@
-module monitordev/common/cron
+module github.com/yangxianbo/cron
 
 go 1.16
 
